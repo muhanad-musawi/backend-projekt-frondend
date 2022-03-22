@@ -1,0 +1,25 @@
+
+
+.mainContent{  
+  margin: 30px 50px;
+}
+
+.hTwo { 
+  color: red; 
+  margin: 40px 0px;
+} 
+
+.text{ 
+  text-align: left;  
+
+
+} 
+
+.imgText{  
+  display: flex;  
+  justify-content: space-between;
+} 
+
+.imgText p { 
+  width: 70%;
+ }
