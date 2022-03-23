@@ -12,10 +12,10 @@ function CategorieImage() {
 
     const BACKEND_URL =
     process.env.NEXT_PUBLIC_BACKEND_URL; /* || 'http://localhost:4000' */
-  const RECORDS_PATH = BACKEND_URL + "/photos/all";
+  const RECORDS_PATH = BACKEND_URL + "/photo-gallery/all";
     /*'http://localhost:4000/photos/all'*/
 
-    await fetch(RECORDS_PATH)
+    await fetch('http://localhost:4000/photos/all')
       .then((response) => response.json())
       .then((data) => {
         //console.log("data" + data)

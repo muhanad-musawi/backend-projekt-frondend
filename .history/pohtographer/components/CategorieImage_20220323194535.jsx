@@ -15,7 +15,7 @@ function CategorieImage() {
   const RECORDS_PATH = BACKEND_URL + "/photos/all";
     /*'http://localhost:4000/photos/all'*/
 
-    await fetch(RECORDS_PATH)
+    await fetch()
       .then((response) => response.json())
       .then((data) => {
         //console.log("data" + data)
