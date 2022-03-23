@@ -1,10 +1,10 @@
  import {useState} from 'react'
  
- function AddPhoto() { 
+ function AddPhoto({categories}) { 
   const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
   const RECORDS_PATH = BACKEND_URL + "/photos/new";
   
-const API_PHOTO_NAME = "uploaded_file"
+  const API_PHOTO_NAME = "uploaded_file"
 
   const [newFile, setNewFile] = useState({ photo: "" });
   const [photoCategorie, setPhotoCategorie] = useState("events");
@@ -61,8 +61,7 @@ const API_PHOTO_NAME = "uploaded_file"
           </div>
         )}
         <select onChange={(e)=>setPhotoCategorie(e.target.value)}>
-          <option value="test1">test1</option>
-          <option value="test2">test2</option>
+          {categories.map(categorie => <option key={categorie} value={categorie}>{categorie}</option>)}
         </select>
         <input type="submit" />
         <hr />

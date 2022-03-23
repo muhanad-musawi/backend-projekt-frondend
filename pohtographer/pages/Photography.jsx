@@ -8,7 +8,15 @@ import AddPhoto from "../components/AddPhoto";
 import CategorieImage from "../components/CategorieImage";
 
 function Photography() {
+
+  const initialInput = {
+    categorie: "",
+  };
+
   const [categories, setCategories] = useState([]);
+  const [inputs, setInputs] = useState(initialInput);
+  const [param, setParam] = useState("")
+
 
   useEffect(() => {
     fetchCategoriesData();
@@ -38,11 +46,6 @@ function Photography() {
   // get all categorie ↑ 
 
   // new categorie Add ↓
-
-  const initialInput = {
-    categorie: "",
-  };
-  const [inputs, setInputs] = useState(initialInput);
 
   function handleInputChange(event) {
     const value = event.target.value;
@@ -145,11 +148,14 @@ function Photography() {
       </div> 
 
      <div> 
-     <AddPhoto/>
+     <AddPhoto categories={categories}/>
      </div>
 
      <div>
-       <CategorieImage/>
+       <CategorieImage 
+        categories={categories}
+        param={param}
+        />
      </div>
 
     </div>
