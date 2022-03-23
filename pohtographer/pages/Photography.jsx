@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import GetAllCategory from "../components/GetAllCategory";
 import AddCategory from "../components/AddCategory";
 import DeleteCategory from "../components/DeleteCategory";
+import AddPhoto from "../components/AddPhoto";
 
 function Photography() {
   const [categories, setCategories] = useState([]);
@@ -140,7 +141,12 @@ function Photography() {
 
       <div>
         <GetAllCategory categories={categories} />
-      </div>
+      </div> 
+
+     <div> 
+     <AddPhoto/>
+     </div>
+
       {/* 
       <div>
     <form action="/profile" method="post" encType="multipart/form-data">
