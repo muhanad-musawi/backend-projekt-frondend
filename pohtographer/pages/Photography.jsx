@@ -127,7 +127,7 @@ function Photography() {
     }
   }
 
-  const handleInputChange = (e) =>{
+  const handleInputChangeCategory = (e) =>{
     setParam(e.target.value.toLowerCase())
   }
 
@@ -156,7 +156,7 @@ function Photography() {
      </div>
 
      <div>
-       <input onChange={handleInputChange} type="text" placeholder="Your categorie..."/>
+       <input onChange={handleInputChangeCategory} type="text" placeholder="Your categorie..."/>
        <CategorieImage 
         categories={categories}
         param={param}
