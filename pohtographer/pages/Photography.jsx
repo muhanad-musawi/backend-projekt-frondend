@@ -17,6 +17,8 @@ function Photography() {
   const RECORDS_PATH = BACKEND_URL + "/photo-gallery/all";
 
   //console.log(BACKEND_URL);
+ 
+  // get all categorie  ↓
 
   const fetchCategoriesData = async () => {
     /*'http://localhost:4000/photo-gallery'*/
@@ -30,6 +32,8 @@ function Photography() {
       })
       .catch((err) => console.log(err));
   };
+
+  // get all categorie ↑ 
 
   // new categorie Add ↓
 
