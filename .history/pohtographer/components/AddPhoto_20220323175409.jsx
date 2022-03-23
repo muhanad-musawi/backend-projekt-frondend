@@ -7,7 +7,7 @@
 const API_PHOTO_NAME = "uploaded_file"
 
   const [newFile, setNewFile] = useState({ photo: "" });
-  const [photoCategorie, setPhotoCategorie] = useState("events");
+
   const [imageSrc, setImageSrc] = useState(""); // Bild als Daten (String)
 
   const handleSubmit = async (e) => { 
@@ -15,25 +15,11 @@ const API_PHOTO_NAME = "uploaded_file"
     e.preventDefault();
     const formData = new FormData();
     formData.append(API_PHOTO_NAME, newFile.photo);
-    //console.log( "formData"+formData)
-    //console.log("categorie"+photoCategorie)
-
+    //console.log(formData)
     await fetch(RECORDS_PATH , {
       method: "POST",
       body: formData,
-    })
-    .then((response)=>{
-      console.log("response" + response.status)
-      if(response.status === 201){
-        alert("Image was saved!")
-        setNewFile("");
-        setImageSrc("")
-        setPhotoCategorie("")
-      } else{
-        alert("Some Error occured")
-      }
-    })
-    .catch((error)=>console.log(error))
+    });
   };
 
   const handlePhoto = (e) => {
@@ -60,9 +46,8 @@ const API_PHOTO_NAME = "uploaded_file"
             <img width="20%" height="auto" src={imageSrc} alt="text" />
           </div>
         )}
-        <select onChange={(e)=>setPhotoCategorie(e.target.value)}>
+        <select>
           <option value="test1">test1</option>
-          <option value="test2">test2</option>
         </select>
         <input type="submit" />
         <hr />

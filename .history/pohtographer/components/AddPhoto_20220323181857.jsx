@@ -17,7 +17,7 @@ const API_PHOTO_NAME = "uploaded_file"
     formData.append(API_PHOTO_NAME, newFile.photo);
     //console.log( "formData"+formData)
     //console.log("categorie"+photoCategorie)
-
+    
     await fetch(RECORDS_PATH , {
       method: "POST",
       body: formData,
@@ -25,15 +25,12 @@ const API_PHOTO_NAME = "uploaded_file"
     .then((response)=>{
       console.log("response" + response.status)
       if(response.status === 201){
-        alert("Image was saved!")
         setNewFile("");
         setImageSrc("")
         setPhotoCategorie("")
-      } else{
-        alert("Some Error occured")
       }
-    })
-    .catch((error)=>console.log(error))
+    }
+
   };
 
   const handlePhoto = (e) => {

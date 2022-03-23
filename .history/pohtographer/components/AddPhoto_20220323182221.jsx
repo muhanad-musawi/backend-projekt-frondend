@@ -29,6 +29,7 @@ const API_PHOTO_NAME = "uploaded_file"
         setNewFile("");
         setImageSrc("")
         setPhotoCategorie("")
+
       } else{
         alert("Some Error occured")
       }

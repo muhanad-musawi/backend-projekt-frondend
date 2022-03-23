@@ -25,10 +25,10 @@ const API_PHOTO_NAME = "uploaded_file"
     .then((response)=>{
       console.log("response" + response.status)
       if(response.status === 201){
-        alert("Image was saved!")
         setNewFile("");
         setImageSrc("")
         setPhotoCategorie("")
+
       } else{
         alert("Some Error occured")
       }

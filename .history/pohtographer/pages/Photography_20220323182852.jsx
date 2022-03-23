@@ -149,7 +149,7 @@ function Photography() {
      </div>
 
      <div>
-       <CategorieImage/>
+       <CategorieImage/
      </div>
 
       {/* 

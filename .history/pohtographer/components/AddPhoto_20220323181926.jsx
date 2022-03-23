@@ -21,19 +21,17 @@ const API_PHOTO_NAME = "uploaded_file"
     await fetch(RECORDS_PATH , {
       method: "POST",
       body: formData,
-    })
+    }
     .then((response)=>{
       console.log("response" + response.status)
       if(response.status === 201){
-        alert("Image was saved!")
         setNewFile("");
         setImageSrc("")
         setPhotoCategorie("")
-      } else{
-        alert("Some Error occured")
       }
-    })
-    .catch((error)=>console.log(error))
+    }
+    )
+    )
   };
 
   const handlePhoto = (e) => {
