@@ -31,10 +31,10 @@ function CategorieImage() {
  //  {images.filter(image.pathCategorie==="events").map((image,
 
   return (
-    <div className={styles.imgMap}>
+    <div>
       {images.map((image, index) => (
-        <div  className={styles.imgContainer}   key={index}>
-          <img className={styles.img} src={image.path} alt="picture"/>
+        <div className={styles.imgContainer} key={index}>
+          <img src={image.path} alt="picture"/>
         </div>
       ))}
     </div>

@@ -33,8 +33,8 @@ function CategorieImage() {
   return (
     <div className={styles.imgMap}>
       {images.map((image, index) => (
-        <div  className={styles.imgContainer}   key={index}>
-          <img className={styles.img} src={image.path} alt="picture"/>
+        <div className={styles.imgContainer} key={index}>
+          <img src={image.path} alt="picture"/>
         </div>
       ))}
     </div>

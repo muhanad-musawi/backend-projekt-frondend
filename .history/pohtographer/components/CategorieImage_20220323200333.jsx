@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import styles from '../styles/CategorieImage.module.css';
+import React, { useEffect, useState } from 'react' 
+import styles from '../styles/GetAllCategory.module.css' 
 
 function CategorieImage() {
 
@@ -31,10 +31,10 @@ function CategorieImage() {
  //  {images.filter(image.pathCategorie==="events").map((image,
 
   return (
-    <div className={styles.imgMap}>
+    <div>
       {images.map((image, index) => (
-        <div  className={styles.imgContainer}   key={index}>
-          <img className={styles.img} src={image.path} alt="picture"/>
+        <div key={index}>
+          <img src={image.path} alt="picture"/>
         </div>
       ))}
     </div>
