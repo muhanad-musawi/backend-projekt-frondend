@@ -1,0 +1,20 @@
+.navbar {  
+  width: 100%;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color:aquamarine;
+} 
+
+.logoName{ 
+ width: 40%;
+} 
+
+.links{  
+  width: 60%;
+  display: flex; 
+  justify-content: space-around;
+} 
+
+.fontRed { 
+  

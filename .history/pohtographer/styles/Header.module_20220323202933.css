@@ -1,0 +1,29 @@
+
+$color-white:#ffffff;  
+$footer-color:#737373;
+$color-gold:#a57d38; 
+$color-dark:#242d34;
+
+.navbar {  
+  width: 100%;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color:aquamarine;
+} 
+
+.logoName{ 
+ width: 40%;
+} 
+
+.links{  
+  width: 60%;
+  display: flex; 
+  justify-content: space-around;
+} 
+
+.fontRed { 
+  background-color: #242d34; 
+  border-radius: 60%;  
+  border: 2px solid  #a57d38;
+}

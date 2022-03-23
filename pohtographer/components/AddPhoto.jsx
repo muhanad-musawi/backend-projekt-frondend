@@ -59,10 +59,13 @@
             Image Preview...
             <img width="20%" height="auto" src={imageSrc} alt="text" />
           </div>
-        )}
+        )} 
+        
+        {/*
         <select onChange={(e)=>setPhotoCategorie(e.target.value)}>
-          {categories.map(categorie => <option key={categorie} value={categorie}>{categorie}</option>)}
-        </select>
+          {categories.map((categorie, index) => <option key={index} value={categorie}>{categorie}</option>)}
+        </select> 
+        */}
         <input type="submit" />
         <hr />
       </form>
