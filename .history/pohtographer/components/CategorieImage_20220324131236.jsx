@@ -71,13 +71,14 @@ function CategorieImage({categories, param}) {
 
   if (categories.includes(param)) {
     return(
-      images.filter(images.photoCategorie===param).map((image) =>
+      images.filter(image.pathCategorie===param).map((image) =>
         <div key={index}>
-          <img src={image.path} alt="picture"/>
+          <Image src={image.path} alt="picture"/>
         </div>
       ))
+    )
   } 
- /**/}
+*/}
 
   return (
     <div className= {styles.imgMap} >
