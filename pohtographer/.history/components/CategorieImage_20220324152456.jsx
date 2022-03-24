@@ -8,7 +8,7 @@ function CategorieImage({categories, selectedCategory}) {
 
   useEffect(()=>{
     fetchAllImages()
-  }, [selectedCategory]) 
+  }, []) 
 
   const BACKEND_URL =
   process.env.NEXT_PUBLIC_BACKEND_URL; /* || 'http://localhost:4000' */
@@ -17,7 +17,7 @@ function CategorieImage({categories, selectedCategory}) {
 
     
     const RECORDS_PATH = BACKEND_URL + `/photos/category/${selectedCategory}`; 
-    
+    const RECORDS_PATH = BACKEND_URL + "/photos/all";
     /*'http://localhost:4000/photos/all'*/
 
     await fetch(RECORDS_PATH)
@@ -67,7 +67,14 @@ function CategorieImage({categories, selectedCategory}) {
 
 { /* */
 
-  
+  if (categories.includes(param)) {
+    return(
+      images.filter(images.photoCategorie===param).map((image) =>
+        <div key={index}>
+          <img src={image.path} alt="picture"/>
+        </div>
+      ))
+  } 
  /**/}
 
   return (

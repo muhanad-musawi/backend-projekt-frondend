@@ -8,22 +8,20 @@ import {useState} from 'react'
   const API_PHOTO_NAME = "uploaded_file"
 
   const [newFile, setNewFile] = useState({ photo: "" });
-  const [photoCategorie, setPhotoCategorie] = useState({ photoCategorie: "" });
+  const [photoCategorie, setPhotoCategorie] = useState("events");
   const [imageSrc, setImageSrc] = useState(""); // Bild als Daten (String)
 
   const handleSubmit = async (e) => { 
 
     e.preventDefault();
     const formData = new FormData();
-    formData.append(API_PHOTO_NAME, newFile.photo); 
-    formData.append( 'photoCategorie',  photoCategorie );
+    formData.append(API_PHOTO_NAME, newFile.photo);
     //console.log( "formData"+formData)
     //console.log("categorie"+photoCategorie)
-    console.log(RECORDS_PATH);
+    
     await fetch(RECORDS_PATH , {
-      method: "POST",  
-      
-     body: formData,
+      method: "POST",
+      body: formData,
     })
     .then((response)=>{
       console.log("response" + response.status)
@@ -65,7 +63,7 @@ import {useState} from 'react'
         )}  
 
          
-    
+        
         <select onChange={(e)=>setPhotoCategorie(e.target.value)}> 
         <option value=""></option>
           {categories.map((categorie, index) => <option key={index}  value={categorie.categorie}>{categorie.categorie}</option>)}

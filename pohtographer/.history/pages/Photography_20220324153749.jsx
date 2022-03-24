@@ -127,13 +127,12 @@ function Photography() {
     }
   }
 
-  
+  const handleInputChangeCategory = (e) =>{
+    / setSe
+  }
 
   // categorie delete ↑
-
-  const handleInputChangeCategory = (event) =>{
-    setSelectedCategory(event)
-  }
+ 
  
 
 

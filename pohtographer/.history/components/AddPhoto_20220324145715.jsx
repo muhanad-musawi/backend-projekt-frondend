@@ -16,13 +16,13 @@ import {useState} from 'react'
     e.preventDefault();
     const formData = new FormData();
     formData.append(API_PHOTO_NAME, newFile.photo); 
-    formData.append( 'photoCategorie',  photoCategorie );
+    formData.append(_NAME, photoCategorie );
     //console.log( "formData"+formData)
     //console.log("categorie"+photoCategorie)
     console.log(RECORDS_PATH);
     await fetch(RECORDS_PATH , {
       method: "POST",  
-      
+      /// body: JSON.stringify({ formData, photoCategorie })
      body: formData,
     })
     .then((response)=>{

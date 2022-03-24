@@ -15,7 +15,7 @@ function Photography() {
 
   const [categories, setCategories] = useState([]);
   const [inputs, setInputs] = useState(initialInput);
-  const [selectedCategory, setSelectedCategory] = useState('Events')
+  const [selectedCategory, setSelectedCategory] = useState("")
 
 
   useEffect(() => {
@@ -127,13 +127,12 @@ function Photography() {
     }
   }
 
-  
+  const handleInputChangeCategory = (e) =>{
+    
+  }
 
   // categorie delete ↑
-
-  const handleInputChangeCategory = (event) =>{
-    setSelectedCategory(event)
-  }
+ 
  
 
 

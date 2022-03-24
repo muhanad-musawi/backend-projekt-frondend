@@ -127,13 +127,12 @@ function Photography() {
     }
   }
 
-  
+  const handleInputChangeCategory = () =>{
+    // setSelectedCategory 
+  }
 
   // categorie delete ↑
-
-  const handleInputChangeCategory = (event) =>{
-    setSelectedCategory(event)
-  }
+ 
  
 
 

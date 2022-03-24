@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 import styles from '../styles/CategorieImage.module.css';
 
-function CategorieImage({categories, selectedCategory}) {
+function CategorieImage({categories, param}) {
 
   const [images,setImages] = useState([]);
 
   useEffect(()=>{
     fetchAllImages()
-  }, [selectedCategory]) 
+  }, []) 
 
   const BACKEND_URL =
   process.env.NEXT_PUBLIC_BACKEND_URL; /* || 'http://localhost:4000' */
@@ -16,8 +16,7 @@ function CategorieImage({categories, selectedCategory}) {
   const fetchAllImages = async () => { 
 
     
-    const RECORDS_PATH = BACKEND_URL + `/photos/category/${selectedCategory}`; 
-    
+    const RECORDS_PATH = BACKEND_URL + "/photos/all";
     /*'http://localhost:4000/photos/all'*/
 
     await fetch(RECORDS_PATH)
@@ -62,12 +61,22 @@ function CategorieImage({categories, selectedCategory}) {
     }
   }
 
- 
+  const handleInputChangeCategory = (e) =>{
+    setParam(e.target.value.toLowerCase())
+  }
+
   // categorie delete ↑
 
 { /* */
 
-  
+  if (categories.includes(param)) {
+    return(
+      images.filter(images.photoCategorie===param).map((image) =>
+        <div key={index}>
+          <img src={image.path} alt="picture"/>
+        </div>
+      ))
+  } 
  /**/}
 
   return (

@@ -15,7 +15,7 @@ function Photography() {
 
   const [categories, setCategories] = useState([]);
   const [inputs, setInputs] = useState(initialInput);
-  const [selectedCategory, setSelectedCategory] = useState('Events')
+  const [param, setParam] = useState("")
 
 
   useEffect(() => {
@@ -127,13 +127,12 @@ function Photography() {
     }
   }
 
-  
+  const handleInputChangeCategory = (e) =>{
+    setParam(e.target.value.toLowerCase())
+  }
 
   // categorie delete ↑
-
-  const handleInputChangeCategory = (event) =>{
-    setSelectedCategory(event)
-  }
+ 
  
 
 
@@ -161,7 +160,9 @@ function Photography() {
       <div>
         <GetAllCategory  
         categories={categories}  
-        onChange = { handleInputChangeCategory }
+        onChange = {( )  => {  
+        
+        }  }
         />
       </div>  
  
@@ -170,7 +171,7 @@ function Photography() {
        
        <CategorieImage 
         categories={categories}
-        selectedCategory={selectedCategory}
+        param={param}
         />
      </div>
     

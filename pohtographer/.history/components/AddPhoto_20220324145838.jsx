@@ -22,7 +22,7 @@ import {useState} from 'react'
     console.log(RECORDS_PATH);
     await fetch(RECORDS_PATH , {
       method: "POST",  
-      
+      /// body: JSON.stringify({ formData, photoCategorie })
      body: formData,
     })
     .then((response)=>{

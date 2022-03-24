@@ -130,9 +130,9 @@ function Photography() {
   
 
   // categorie delete ↑
-
   const handleInputChangeCategory = (event) =>{
-    setSelectedCategory(event)
+    // setSelectedCategory  
+    console.log(event.target.value);
   }
  
 
