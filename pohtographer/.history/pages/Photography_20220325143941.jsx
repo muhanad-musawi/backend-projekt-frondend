@@ -192,20 +192,21 @@ function Photography() {
       </div>
       <div>  
       
-      {/*
+      
         <Auth 
-        isShowLogin={isShowLogin}
+        
         setUser={setUser} 
         setPassword ={setPassword } 
         handleShowLogin={handleShowLogin} 
         handleLogoutUser ={handleLogoutUser} 
         handleSecretLogin = {handleSecretLogin}  
-        isCurrentUserAdmin= {isCurrentUserAdmin}
+        isCurrentUserAdmin= {isCurrentUserAdmin} 
+      
         />   
-    */}
+        
         
        
-         
+        {/* 
         {isShowLogin ? 
         <div>
           <form onSubmit={handleSecretLogin}>
@@ -229,7 +230,7 @@ function Photography() {
           }
         </div>
         } 
-       
+        */}
       </div>
     </div>
   );

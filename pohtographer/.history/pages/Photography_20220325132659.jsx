@@ -6,7 +6,6 @@ import AddCategory from "../components/AddCategory";
 import DeleteCategory from "../components/DeleteCategory";
 import AddPhoto from "../components/AddPhoto";
 import CategorieImage from "../components/CategorieImage";
-import Auth from "../components/Auth";
 
 function Photography() {
   const initialInput = {
@@ -15,7 +14,7 @@ function Photography() {
 
   const [categories, setCategories] = useState([]);
   const [inputs, setInputs] = useState(initialInput);
-  const [selectedCategory, setSelectedCategory] = useState('Weddings');
+  const [selectedCategory, setSelectedCategory] = useState('Wedd');
   const [isShowLogin, setIsShowLogin] = useState(false);
   const [isCurrentUserAdmin, setIsCurrentUserAdmin] = useState(false);
   const [user, setUser] = useState("");
@@ -190,22 +189,7 @@ function Photography() {
           isCurrentUserAdmin={isCurrentUserAdmin}
         />
       </div>
-      <div>  
-      
-      {/*
-        <Auth 
-        isShowLogin={isShowLogin}
-        setUser={setUser} 
-        setPassword ={setPassword } 
-        handleShowLogin={handleShowLogin} 
-        handleLogoutUser ={handleLogoutUser} 
-        handleSecretLogin = {handleSecretLogin}  
-        isCurrentUserAdmin= {isCurrentUserAdmin}
-        />   
-    */}
-        
-       
-         
+      <div>
         {isShowLogin ? 
         <div>
           <form onSubmit={handleSecretLogin}>
@@ -228,8 +212,7 @@ function Photography() {
             </button>
           }
         </div>
-        } 
-       
+        }
       </div>
     </div>
   );

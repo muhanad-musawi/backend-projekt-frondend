@@ -200,7 +200,8 @@ function Photography() {
         handleShowLogin={handleShowLogin} 
         handleLogoutUser ={handleLogoutUser} 
         handleSecretLogin = {handleSecretLogin}  
-        isCurrentUserAdmin= {isCurrentUserAdmin}
+        isCurrentUserAdmin= {isCurrentUserAdmin} 
+      
         />   
     */}
         

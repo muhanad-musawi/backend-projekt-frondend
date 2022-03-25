@@ -200,9 +200,10 @@ function Photography() {
         handleShowLogin={handleShowLogin} 
         handleLogoutUser ={handleLogoutUser} 
         handleSecretLogin = {handleSecretLogin}  
-        isCurrentUserAdmin= {isCurrentUserAdmin}
+        isCurrentUserAdmin= {isCurrentUserAdmin} 
+      
         />   
-    */}
+        
         
        
          
@@ -229,7 +230,7 @@ function Photography() {
           }
         </div>
         } 
-       
+        */}
       </div>
     </div>
   );
