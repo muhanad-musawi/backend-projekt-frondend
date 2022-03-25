@@ -6,7 +6,7 @@ import AddCategory from "../components/AddCategory";
 import DeleteCategory from "../components/DeleteCategory";
 import AddPhoto from "../components/AddPhoto";
 import CategorieImage from "../components/CategorieImage";
-
+i
 
 function Photography() {
   const initialInput = {
