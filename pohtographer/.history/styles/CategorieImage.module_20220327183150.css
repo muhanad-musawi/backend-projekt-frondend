@@ -1,0 +1,29 @@
+
+.imgMap{   
+  width: 100%;
+   border: 2px solid red; 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto;
+  
+}
+
+.imgContainer{    
+  width: 90%;
+  border: 2px solid red;
+  margin: auto auto; 
+  
+}
+
+.img{   
+  margin: auto auto;
+  width: 100%;
+} 
+
+
+
+@media screen and (min-width: 700px) {  
+  
+  
+  
+}

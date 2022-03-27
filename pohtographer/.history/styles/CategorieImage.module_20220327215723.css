@@ -1,0 +1,50 @@
+
+ 
+
+.gallery{    
+  box-sizing: border-box;
+  -webkit-col
+   padding: 0 12px;
+  
+}
+
+.imgContainer{    
+  width: 90%;
+  margin: auto auto;  
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+  
+}
+
+.img{   
+  margin: auto auto;
+  width: 100%; 
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+} 
+
+
+
+
+@media screen and (min-width: 800px) {  
+  
+  .imgContainer {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+  }
+  
+} 
+
+@media screen and (min-width: 600px) {  
+  
+  .imgContainer {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  
+}

@@ -1,0 +1,12 @@
+
+.imageCategory{  
+  display: flex; 
+  justify-content: space-evenly;   
+  background: rgb(178,135,60);
+background: linear-gradient(180deg, rgba(178,135,60,1) 0%, rgba(195,152,77,1) 15%, rgba(203,166,103,1) 30%, rgba(212,181,128,1) 45%, rgba(220,196,153,1) 60%, rgba(229,211,179,1) 75%, rgba(238,225,204,1) 85%, rgba(246,240,229,1) 95%, rgba(255,255,255,1) 100%);
+
+} 
+
+.ulCategory{  
+  list-style-type: none;
+ }

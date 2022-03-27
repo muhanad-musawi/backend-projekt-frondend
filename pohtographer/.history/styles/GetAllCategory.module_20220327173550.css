@@ -1,0 +1,26 @@
+
+.imageCategory{  
+  display: flex; 
+  justify-content: space-evenly;   
+  background: rgb(31,37,44);
+background: linear-gradient(180deg, rgba(31,37,44,1) 0%, rgba(94,112,134,1) 15%, rgba(169,181,195,1) 30%, rgba(219,224,230,1) 45%, rgba(239,241,244,1) 80%, rgba(255,255,255,1) 90%);
+
+} 
+
+.ulCategory{  
+  list-style-type: none;
+ } 
+
+ .categoryBTN{  
+  
+   color: red;
+   border-radius: 2px;
+   border: none; 
+   border-bottom: 2px solid #a57d38; 
+  
+} 
+
+.categoryBTN:hover { 
+   
+  border-right: 2px solid #a57d38 ;  
+}

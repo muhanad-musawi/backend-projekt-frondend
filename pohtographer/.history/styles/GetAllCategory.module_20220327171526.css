@@ -1,0 +1,11 @@
+
+.imageCategory{  
+  display: flex; 
+  justify-content: space-evenly;  
+  color: ;
+
+} 
+
+.ulCategory{  
+  list-style-type: none;
+ }

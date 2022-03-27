@@ -1,0 +1,39 @@
+
+.imgMap{   
+  width: 100%;
+   border: 2px solid red; 
+  
+  
+}
+
+.imgContainer{    
+  width: 90%;
+  border: 2px solid red;
+  margin: auto auto; 
+   display: grid; 
+   grid-auto-flow: dense; 
+   column-gap: 10px; 
+   row-gap: 10px;
+   grid-template: 
+     "1fr 1fr 1fr 1fr 1fr" 33.33vh
+     "1fr 1fr 1fr 1fr 1fr" 33.33vh
+     "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+}
+
+.img{   
+  margin: auto auto;
+  width: 100%;
+} 
+
+
+
+@media screen and (min-width: 700px) {  
+  /**
+  .imgMap{   
+    
+     grid-template-columns: 1fr 1fr; 
+     grid-template-rows: 1fr;
+    
+  } 
+  */
+}

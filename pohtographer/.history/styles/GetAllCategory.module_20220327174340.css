@@ -1,0 +1,28 @@
+
+.imageCategory{  
+  display: flex;  
+  pading: 0px 10px;
+  justify-content: space-evenly;   
+  border-bottom: 3px solid #a57d38;
+} 
+
+.ulCategory{  
+  list-style-type: none;
+ } 
+
+ .categoryBTN{   
+   font-weight: bold; 
+   font-size: 20px;
+   padding: 5px 15px;
+   color: #a57d38; 
+   background-color: #ffffff;
+   border-radius: 10px;
+   border: none; 
+   border-bottom: 2px solid #a57d38; 
+  
+} 
+
+.categoryBTN:hover { 
+   
+  border-right: 2px solid #a57d38 ;  
+}

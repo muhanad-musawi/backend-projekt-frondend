@@ -1,0 +1,16 @@
+
+.imgMap{  
+  width: 100%;  
+  display: grid;   
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; 
+}
+
+.imgContainer{   
+  width: 100%;
+  
+}
+
+.img{  
+  width: 90%;
+}

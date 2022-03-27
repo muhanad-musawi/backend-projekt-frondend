@@ -1,0 +1,16 @@
+
+.imgMap{   
+  width: 100vw;
+   border: 2px solid red;
+  
+}
+
+.imgContainer{   
+  border: 2px solid red;
+  margin: auto auto;
+}
+
+.img{   
+  margin: auto auto;
+  width: 90%;
+}
