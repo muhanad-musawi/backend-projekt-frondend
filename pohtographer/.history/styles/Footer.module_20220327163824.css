@@ -1,0 +1,129 @@
+
+
+.footer {    
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(36,45,52,1);  
+}  
+
+.startFooter {  
+  display: grid;   
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; 
+}
+
+.conceptText h6{  
+  color: #ffffff; 
+} 
+
+.conceptText p {  
+  color: #737373;
+} 
+
+.adresseLink h6{  
+  color: #ffffff; 
+} 
+
+.adresseLink div{   
+  color: #737373;
+} 
+
+.openingContactDetails h6{  
+  color: #ffffff; 
+} 
+
+.openingContactDetails div{  
+  color: #737373;
+} 
+
+.parkingGarage h6{  
+  color: #ffffff; 
+} 
+
+.parkingGarage div {  
+  color: #737373;
+} 
+
+.jobsImpressumDatenschutzerklärungLink  div {   
+  margin: 10px 0; 
+  padding: 5px 5px;
+  color: #ffffff; 
+  background-color: #1f252c; 
+  width: max-content;
+}  
+
+.jobsImpressumDatenschutzerklärungLink  div {    
+  color: #ffffff; 
+  background-color: #1f252c; 
+}
+
+
+
+.copyrightLink {  
+  color: #737373; 
+  display: flex;
+} 
+
+.link { 
+  color: #a57d38;
+} 
+
+.endFooter {    
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;   
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid  #737373;
+}  
+
+.socialMedia {  
+ text-align: center; 
+}
+
+.socialMediaUl {   
+  list-style: none;
+  display: flex; 
+ justify-content: space-between;
+} 
+
+.socialMediaUl li { 
+  margin: 0; 
+} 
+
+
+@media screen and (min-width: 700px) {
+   
+  .startFooter {  
+    display: grid;   
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;  
+    column-gap: 20px;
+    row-gap: 20px; 
+  }  
+
+  .endFooter {    
+    flex-direction: row;
+  } 
+  
+  .socialMediaUl li { 
+    margin: 0 10px
+  } 
+  
+} 
+
+@media screen and (min-width: 1000px) {
+   
+  .startFooter {  
+    display: grid;   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;  
+    
+  } 
+
+  .socialMedia {  
+    text-align: center; 
+    display: flex; 
+    justify-content: space-between;
+   }
+}

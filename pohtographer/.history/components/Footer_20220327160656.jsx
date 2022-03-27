@@ -1,0 +1,85 @@
+import Link from "next/link";
+import styles from "../styles/Footer.module.css";
+
+function Footer() {
+  return (
+    <div className={styles.footer}>
+
+    <div className={styles.startFooter}>
+      <div className={styles.conceptText}>
+        <h6>Muhanad</h6>
+        <p>
+          With this concept for men, enjoy pure, precise handwork in a relaxed
+          atmosphere at Muhanad`s Barber Shop. The barber is a true craftsman
+          profession. He knows not only about the main hair, but also about
+          beard care, wet shaving - he is THE expert for men`s hair.
+        </p>
+      </div>
+
+      <div className={styles.adresseLink}>
+        <h6>Muhanad</h6>
+        <div>
+          <Link href="'">straße</Link>
+        </div>
+      </div>
+
+      <div className={styles.openingContactDetails}>
+        <h6>Appointment Tues. - Sat. at:</h6>
+        <div>
+          <Link href="'">211 11 11 11 11</Link>
+          <Link href="'">Muhanads</Link>
+        </div>
+      </div>
+
+      <div className={styles.parkingGarage}>
+        <h6>Parking garage</h6>
+        <div>
+          <Link href="'">Fürstenwall</Link>
+        </div>
+      </div>
+
+      <div className={styles.jobsImpressumDatenschutzerklärungLink}> 
+      <div><Link href="#1">Jobs</Link></div> 
+      <div><Link href="#2">Impressum</Link></div>
+       <div><Link href="#3">Datenschutzerklärung</Link></div>
+      </div>
+       </div>
+
+
+      <div className={styles.endFooter}> 
+
+        <div className={styles.copyrightLink}>
+          <p>
+           Copyright &copy; 2022 All Rights Reserved by 
+           <span className={styles.link}><Link href="#">  M-B-S</Link></span>.
+          </p>
+        </div> 
+
+        <div className={styles.socialMedia}>
+          <ul className={styles.socialMediaUl}>
+           <span><li>
+              <Link href="#">facebook</Link>
+            </li></span>  
+            <span>
+            <li>
+              <Link href="#">twitter</Link>
+            </li> 
+            </span> 
+            <span>
+            <li>
+              <Link href="#">twitter </Link>
+            </li> 
+            </span> 
+            
+            <li>
+              <Link href="#">facebook</Link>
+            </li>
+          </ul>
+        </div>
+      </div> 
+
+    </div>
+  );
+}
+
+export default Footer;

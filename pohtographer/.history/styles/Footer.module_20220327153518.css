@@ -1,0 +1,77 @@
+
+
+.footer {    
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(36,45,52,1);  
+} 
+
+.conceptText h6{  
+  color: #ffffff; 
+
+} 
+
+.conceptText p {  
+  color: #737373;
+} 
+
+.adresseLink h6{  
+  color: #ffffff; 
+} 
+
+.adresseLink div{   
+  color: #737373;
+} 
+
+.openingContactDetails h6{  
+  color: #ffffff; 
+} 
+
+.openingContactDetails div{  
+  color: #737373;
+} 
+
+.parkingGarage h6{  
+  color: #ffffff; 
+} 
+
+.parkingGarage div {  
+  color: #737373;
+} 
+
+.jobsImpressumDatenschutzerklärungLink  div {   
+  margin: 10px 0; 
+  padding: 5px 5px;
+  color: red; 
+  background-color: #ffffff; 
+  width: max-content;
+} 
+
+
+.copyrightLink {  
+  color: #737373; 
+  display: flex;
+
+} 
+
+.link { 
+  color: #a57d38;
+} 
+
+.endFooter {   
+  display: ;
+  border-top: 2px solid  #737373;
+}  
+
+.socialMedia {  
+  width: 100%;
+}
+
+.socialMediaUl {   
+  list-style: none;
+  display: flex; 
+} 
+
+.socialMediaUl li { 
+  margin: 0 10px
+}
